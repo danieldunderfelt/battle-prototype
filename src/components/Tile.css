@@ -1,0 +1,46 @@
+.Grid {
+  position: relative;
+}
+
+.Tile {
+  border: 1px solid #e1e1e1;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+.Tile:hover {
+  background: #ededed;
+}
+
+.UnitIcon {
+  padding: 0.2rem;
+  font-size: 0.95rem;
+  border-radius: 50%;
+  text-align: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.TileMenu {
+  position: absolute;
+  width: 8rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  transform: translate(-18%, -120%);
+}
+
+.TileMenu button {
+  width: 100%;
+  margin-bottom: 0.25rem;
+}

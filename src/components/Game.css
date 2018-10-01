@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.Game {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 2rem;
+  width: 100%;
+}
