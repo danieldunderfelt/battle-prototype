@@ -30,7 +30,15 @@ class Game extends Component {
     this.game.turn = nextTurn
   }
 
-  onTileClick = tile => action(() => (this.game.selectedTile = tile))
+  onTileClick = tile => action(() => {
+    const { selectedTile } = this.game
+    
+    if(!selectedTile || !(selectedTile.x === tile.x && selectedTile.y === tile.y)) {
+      this.game.selectedTile = tile
+    } else {
+      this.game.selectedTile = null
+    }
+  })
 
   render() {
     const { grid, heroes, enemies, selectedTile } = this.game
